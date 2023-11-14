@@ -16,3 +16,7 @@ jmp $          ; This creates an infinite loop, causing the program to hang inde
 section .text
     ; var db 'Japan' with individual character attributes
 	var db 'J', 0xE1, 'a', 0x42, 'p', 0xD3, 'a', 0x70, 'n', 0x1F
+
+;;; nasm -f bin -o <file>.img <file>.asm
+;;; command to truncate: 
+;;; truncate <file> --size 1474560

@@ -7,7 +7,7 @@ org 7c00H   ; Set the origin address to 0x7C00, a common starting point for boot
 go:
     mov sp, 0x7C00 ; Srt stack pointer to 0x7C00
     mov AX, 1300H ; Load 0x1300 into AX. This is a function code for setting a specific video mode.
-    mov BH, 0     ; Clear BH (often used for the video page)
+    mov BH, 0     ; Clear BH 
     mov BL, 02H   ; Set BL to 0x02, which specifies a green color attribute
     mov CX, 3     ; Set CX to 3, indicating that three characters will be written
     mov DH, 0     ; Set cursor row
@@ -20,3 +20,7 @@ jmp $          ; This creates an infinite loop, causing the program to hang inde
 
 section .text 
     chr db 'LOL' ; Define a data section containing string 'LOL'
+
+;;; nasm -f bin -o <file>.img <file>.asm
+;;; command to truncate: 
+;;; truncate <file> --size 1474560

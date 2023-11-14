@@ -18,3 +18,7 @@ jmp $          ; This creates an infinite loop, causing the program to hang inde
 
 section .text 
     chr db 'LOL' ; Define a data section containing string 'LOL'
+
+;;; nasm -f bin -o <file>.img <file>.asm
+;;; command to truncate: 
+;;; truncate <file> --size 1474560

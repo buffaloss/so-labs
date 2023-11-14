@@ -5,5 +5,6 @@ go:
     mov AL, 'A' ; character to print
     int 10h ; call BIOS
 
-;;; nasm -f bin -o echo.com echo.asm
+;;; nasm -f bin -o <file>.img <file>.asm
 ;;; command to truncate: 
+;;; truncate <file> --size 1474560
