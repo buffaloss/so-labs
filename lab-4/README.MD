@@ -22,7 +22,7 @@ Track: 7 (0x7)
 
 Sector: 64 (0x40)
 
-* The chosen task: Dec-to-Hex and Hex-to-Dec convertor
+* The chosen task: Decimal to Binary converter
 
 ### Compilation Commands:
 
